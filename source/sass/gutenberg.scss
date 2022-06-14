@@ -1,0 +1,38 @@
+@import "base/vars";
+@import "base/helpers";
+@import "base/base";
+@import "base/remixicon";
+
+@import "layout/sections/hero";
+@import "layout/sections/text_video";
+@import "layout/sections/segments";
+@import "layout/sections/featured_story";
+@import "layout/sections/image_text";
+@import "layout/sections/stories_listing";
+@import "layout/sections/article_top";
+@import "layout/sections/cover_image";
+@import "layout/sections/double_text";
+@import "layout/sections/grid_images";
+@import "layout/sections/single_image";
+@import "layout/sections/author_block";
+@import "layout/sections/services";
+@import "layout/sections/block_icons";
+@import "layout/sections/video_wrap";
+@import "layout/sections/quote";
+@import "layout/sections/similar_stories";
+@import "layout/sections/intro_desc";
+@import "layout/sections/button_section";
+@import "layout/sections/bullet_points";
+@import "layout/sections/information_icons";
+@import "layout/sections/key_features";
+@import "layout/sections/plain_text";
+@import "layout/sections/banner";
+@import "layout/sections/events_listing";
+@import "layout/sections/information_columns";
+@import "layout/sections/products_listing";
+@import "layout/sections/contact";
+@import "layout/sections/power_cellution";
+
+.marjini {
+	margin: 0 !important;
+}

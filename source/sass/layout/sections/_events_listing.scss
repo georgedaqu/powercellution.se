@@ -1,0 +1,214 @@
+section.events_top{
+	@media(max-width: 1280px){
+		margin: 70px 0;
+	}
+	@media(max-width: 1024px){
+		margin: 40px 0;
+	}
+	@media(max-width: 768px){
+		margin: 20 0;
+	}
+}
+
+section.events_listing{
+	@media(max-width: 1366px){
+		margin-bottom: 80px;
+	}
+	@media(max-width: 1280px){
+		margin-bottom: 60px;
+	}
+	@media(max-width: 1024px){
+		margin-bottom: 40px;
+	}
+	div.container{
+		div.no_events{
+			display: none;
+			margin-bottom: 50px;
+		}
+		div.events_listing_items{
+			margin-bottom: 50px;
+			article{
+				a{
+					display: grid;
+					grid-gap: 25px;
+					grid-template-columns: 115px 1fr 30px;
+					align-items: center;
+					padding: 30px 0;
+					border-bottom: 1px solid $cblack;
+					@media(max-width: 768px){
+						grid-template-columns: 115px 1fr;
+					}
+					span.event_image{
+						padding-top: 100%;
+						border-radius: 5px;
+						overflow: hidden;
+						img{
+							@extend .fit-cover;
+						}
+					}
+					span.event_texts{
+						time{
+							margin-bottom: 10px;
+							color: $cmain;
+							font-size: var(--font-size-small);
+						}
+						span.event_title{
+							display: block;
+							color: $cbase;
+							font-size: var(--font-size-medium);
+						}
+						span.event_excerpt{
+							display: block;
+							color: $cmain;
+							font-size: var(--font-size-small);
+						}
+					}
+					em{
+						@media(max-width: 768px){
+							display: none;
+						}
+						&:before{
+							color: $ccorp;
+							font-size: 40px;
+						}
+					}
+					&:hover{
+						padding-left: 25px;
+						padding-right: 25px;
+						background-color: $clightest;
+					}
+				}
+				&:first-of-type{
+					a{
+						border-top: 1px solid $cblack;
+					}
+				}
+			}
+		}
+	}
+}
+section.video_archive{
+	background-color: $cblack;
+	div.container{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+		padding-top: 100px;
+		padding-bottom: 100px;
+		@media(max-width: 1280px){
+			padding-top: 70px;
+			padding-bottom: 70px;
+		}
+		@media(max-width: 1024px){
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
+		@media(max-width: 768px){
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+		@media(max-width: 420px){
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		div.video_archive_intro{
+			h2{
+				font-size: 44px;
+			}
+			color: $cwhite;
+			div.video_archive_intro_description{
+				margin: 25px 0;
+				font-size: 22px;
+			}
+		}
+		div.vide_cards{
+			margin: 100px 0;
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			gap: 50px;
+			@media(max-width: 1440px){
+				margin: 80px 0;
+			}
+			@media(max-width: 1366px){
+				margin: 70px 0;
+			}
+			@media(max-width: 1280px){
+				margin: 50px 0;
+			}
+			@media(max-width: 1024px){
+				grid-template-columns: repeat(2, 1fr);
+				gap: 40px;
+				margin: 40px 0;
+			}
+			@media(max-width: 768px){
+				grid-template-columns: 1fr;
+				margin: 20px 0;
+			}
+			@media(max-width: 420px){
+				margin: 0;
+			}
+			a{
+				color: $cwhite;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: flex-start;
+				figure{
+					margin-bottom: 15px;
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					@media(max-width: 1024px){
+						margin-bottom: 0;
+					}
+					&::before{
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						font-family: remixicon;
+						content:"\f008";
+						font-size: 150px;
+						color: $cwhite;
+						opacity: .5;
+						transition: .3s;
+						z-index: 2;
+					}
+				}
+				span{
+					font-size: var(--font-size-smaller);
+					margin-bottom: 15px;
+					opacity: .8;
+					@media(max-width: 1024px){
+						font-size: var(--font-size-small);
+						margin-bottom: 5px;
+					}
+				}
+				strong{
+					font-size: var(--font-size-base);
+					font-weight: 500;
+					transition: .3s;
+					@media(max-width: 1024px){
+						font-size: var(--font-size-smaller);
+					}
+				}
+				&:hover{
+					figure{
+						&::before{
+							background-color: rgba($cdark, .5);
+							opacity: 1;
+						}
+					}
+					strong{
+						color: $ccorp;
+					}
+				}
+			}
+		}
+	}
+}

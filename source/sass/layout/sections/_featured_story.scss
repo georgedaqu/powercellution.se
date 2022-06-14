@@ -1,0 +1,65 @@
+section.featured_story {
+	figure {
+		z-index: 1;
+		img {
+			width: 100%;
+			vertical-align: top;
+			z-index: 1;
+		}
+		&:before {
+			@extend .overlay;
+			background-color: rgba($cblack, 0.5);
+			z-index: 2;
+		}
+	}
+	div.container {
+		width: 80%;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		padding-right: 900px;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		color: $cwhite;
+		@media (max-width: 1680px) {
+			padding-right: 600px;
+		}
+		@media (max-width: 1440px) {
+			padding-right: 300px;
+		}
+		@media (max-width: 1366px) {
+			padding-right: 100px;
+		}
+		@media (max-width: 1024px) {
+			padding-right: 0;
+			text-align: center;
+			white-space: nowrap;
+		}
+		h3 {
+			font-size: 16px;
+		}
+		h2 {
+			font-size: 24px;
+			white-space: normal;
+			@media (max-width: 420px) {
+				font-size: 22px;
+				margin: 0;
+			}
+		}
+		div.text {
+			margin-bottom: 30px;
+			@media (max-width: 1366px) {
+				font-size: 18px;
+			}
+			@media (max-width: 1024px) {
+				display: none;
+				margin-bottom: 16px;
+			}
+		}
+		div.more {
+			@media (max-width: 1024px) {
+				justify-content: center;
+			}
+		}
+	}
+}
